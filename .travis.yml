@@ -26,6 +26,6 @@ deploy:
   env: "SE-project-dev"
   bucket_name: "elasticbeanstalk-us-east-1-783764603041"
   on:
-    branch: main
+    branch: new-main
   edge: true
   
