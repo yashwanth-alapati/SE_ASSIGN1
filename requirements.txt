@@ -8,4 +8,7 @@ virtualenv==20.26.6
 pytest
 pytest-django
 black
+flake8
+coverage
+
 

@@ -14,12 +14,13 @@ before_script:
 # Command to run tests
 script:
   - pytest  # If you're using pytest
+  - git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
   # - python manage.py test  # If you prefer Django's built-in test framework
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id: "AKIA3M7ACYCQ3QPKF6X7"
-  secret_access_key: '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'
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   region: "us-east-1"
   app: "SE_project"
   env: "SE-project-dev"
@@ -27,3 +28,4 @@ deploy:
   on:
     branch: main
   edge: true
+  
