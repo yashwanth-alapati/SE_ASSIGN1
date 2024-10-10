@@ -18,8 +18,8 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id: ${AWS_ACCESS_KEY}
-  secret_access_key: ${AWS_SECTRET_ACCESS_KEY}
+  AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY}
+  AWS_SECRET_ACCESS_KEY: ${AWS_SECTRET_ACCESS_KEY}
   region: "us-east-1"
   app: "SE_project"
   env: "SE-project-dev"
