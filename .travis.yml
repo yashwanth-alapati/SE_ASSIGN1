@@ -9,7 +9,7 @@ install:
 
 # Commands to run before your tests (e.g., migrations)
 before_script:
-  - python manage.py migrate  # Run database migrations
+  - python manage.py migrate  # Run database migration
 
 # Command to run tests
 script:
