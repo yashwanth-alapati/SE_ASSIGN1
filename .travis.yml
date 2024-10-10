@@ -15,3 +15,14 @@ before_script:
 script:
   - pytest  # If you're using pytest
   # - python manage.py test  # If you prefer Django's built-in test framework
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id:
+    secure: "Encrypted AKIA3M7ACYCQ3QPKF6X7="
+  secret_access_key:
+    secure: "Encypted /o40+0Hwq87I0dgy1RkJbiyl2m5p09nUqgqHLwGx="
+  region: "us-east-1"
+  app: "SE_project"
+  env: "SE-project-dev"
+  bucket_name: "elasticbeanstalk-us-east-1-783764603041"
