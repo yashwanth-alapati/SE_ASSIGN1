@@ -18,14 +18,11 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  env:
-    access_key_id:
-      secure: ${AWS_ACCESS_KEY}
-    secret_access_key:
-      secure: ${AWS_SECTRET_ACCESS_KEY}
   region: "us-east-1"
   app: "SE_project"
   env: "SE-project-dev"
   bucket_name: "elasticbeanstalk-us-east-1-783764603041"
   on:
     branch: main
+    access_key_id: ${AWS_ACCESS_KEY}
+    secret_access_key: ${AWS_SECTRET_ACCESS_KEY}
