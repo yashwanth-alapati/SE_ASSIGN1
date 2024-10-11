@@ -2,7 +2,7 @@
 
 # Create your tests here.
 
-import pytest
+
 from .utils import add_numbers
 
 

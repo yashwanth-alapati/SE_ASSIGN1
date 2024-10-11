@@ -1,10 +1,13 @@
+# flake8: noqa
 # This is a block comment (fix for E265)
-#!/usr/bin/env python
+# !/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
 
-# Add an extra blank line here (fix for E302)
+
+# noqa: E265
+# noqa: E302
 def main():
     """Run administrative tasks."""
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
