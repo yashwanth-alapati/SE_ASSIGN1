@@ -1,9 +1,10 @@
+# This is a block comment (fix for E265)
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-#dummy
 
+# Add an extra blank line here (fix for E302)
 def main():
     """Run administrative tasks."""
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
