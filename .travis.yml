@@ -16,7 +16,6 @@ script:
   - pytest  # If you're using pytest
   - git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
   # - python manage.py test  # If you prefer Django's built-in test framework
-  #none
 deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_ACCESS_KEY_ID
