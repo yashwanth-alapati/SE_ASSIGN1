@@ -1,5 +1,5 @@
 # flake8: noqa
-# This is a block comment (fix for E265)
+# This is a block scomment (fix for E265)
 # !/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
 import os
