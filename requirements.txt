@@ -10,6 +10,5 @@ pytest-django
 black
 flake8
 coverage
-coveralls
 
 
