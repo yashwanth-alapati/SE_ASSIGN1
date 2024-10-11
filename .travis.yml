@@ -15,9 +15,12 @@ before_script:
 script:
   - coverage run -m pytest  # If you're using pytest
   - git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
+  - black --check .
+  - flake8 .
   # - python manage.py test  # If you prefer Django's built-in test framework
   #try
 after_success:
+  - coverage report
   - coveralls
 deploy:
   provider: elasticbeanstalk
