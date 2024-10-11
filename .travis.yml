@@ -11,7 +11,7 @@ install:
 before_script:
   - python manage.py migrate  # Run database migration
 
-# Command to run tests
+# Command to run tests and
 script:
   - coverage run -m pytest  # If you're using pytest
   - git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
